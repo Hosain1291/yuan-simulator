@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>입법원 시뮬레이터</title>
+<meta name="description" content="1969–2024 중화민국 입법위원 선거 17번을 내 입장으로 다시 치르는 시뮬레이터. 반원 의석, 입법원장·총통 선거, 선거구 지도.">
+<link rel="alternate" hreflang="ko" href="./"><link rel="alternate" hreflang="en" href="en.html"><link rel="alternate" hreflang="zh-Hant" href="zh.html">
+<link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&family=Noto+Serif+TC:wght@600;800&family=Noto+Sans+TC:wght@400;500;700&family=Gowun+Batang:wght@400;700&family=DotGothic16&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head><body>
+<div class="wrap">
+  <div class="top">
+    <div class="brand">
+      <svg viewBox="0 0 30 24" aria-hidden="true"><path d="M3 22h24M6 22v-8M10 22v-8M14 22v-8M16 22v-8M20 22v-8M24 22v-8M4 14h22M7 14l8-5 8 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="15" cy="4.5" r="2.4" fill="currentColor"/></svg>
+      <div>입법원 시뮬레이터<small>立法院 · 1969 — 2024</small></div>
+    </div>
+    <div class="topr">
+      <nav class="lang" aria-label="언어"><a href="./" hreflang="ko" lang="ko" aria-current="page">한국어</a><a href="en.html" hreflang="en" lang="en">English</a><a href="zh.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></nav>
+      <div class="skin" id="skin" role="group" aria-label="테마"><button type="button" data-skin="auto">자동</button><button type="button" data-skin="light"><i style="background:#ffffff"></i>화이트</button><button type="button" data-skin="dark"><i style="background:#181b21"></i>다크</button><button type="button" data-skin="gold"><i style="background:linear-gradient(135deg,#f6d77a,#a87a00)"></i>황금</button><button type="button" data-skin="win9x"><i style="background:#008080;border-color:#c0c0c0"></i>윈도우 9x</button><button type="button" data-skin="winxp"><i style="background:linear-gradient(180deg,#0997ff,#003dd7);border-color:#2f9e2f"></i>윈도우 XP</button><button type="button" data-skin="paper"><i style="background:#d9c49a"></i>올드 페이퍼</button></div>
+      <button type="button" class="link" id="toHome" hidden>선거 다시 고르기</button>
+    </div>
+  </div>
+  <main id="app"></main>
+  <p class="foot">질문과 정당 위치는 각 선거의 대표 쟁점을 단순화한 것으로, 실제 당론·표결과 다를 수 있습니다. 1969–1989년 증보·증액 선거는 선거를 치르지 않은 1948년 의원을 빼고 선거 의석만 계산하며, 교포 의석은 실제대로 고정합니다. 무소속은 한 묶음으로 계산합니다. 선거구 지도는 받은 입법위원 선거 지도(maps/original)의 라벨을 읽어 선거구를 인식한 뒤 라벨을 지운 것이며, 지도 위 배치는 추정입니다.</p>
+</div>
+<script src="data/elections.js"></script>
+<script src="data/districts.js"></script>
+<script src="data/presidents.js"></script>
+<script src="questions/1969.js"></script>
+<script src="questions/1972.js"></script>
+<script src="questions/1975.js"></script>
+<script src="questions/1980.js"></script>
+<script src="questions/1983.js"></script>
+<script src="questions/1986.js"></script>
+<script src="questions/1989.js"></script>
+<script src="questions/1992.js"></script>
+<script src="questions/1995.js"></script>
+<script src="questions/1998.js"></script>
+<script src="questions/2001.js"></script>
+<script src="questions/2004.js"></script>
+<script src="questions/2008.js"></script>
+<script src="questions/2012.js"></script>
+<script src="questions/2016.js"></script>
+<script src="questions/2020.js"></script>
+<script src="questions/2024.js"></script>
+<script src="i18n/ko.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/card.js"></script>
+<script src="js/app.js"></script>
+</body></html>

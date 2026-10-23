@@ -1,0 +1,25 @@
+/* English questions for 1969 — [title, option A, option B], same order as questions/1969.js */
+window.I18N.data.Q[1969] = [
+ ["Full renewal of the “eternal legislature”", "All members elected on the mainland in 1948 should face new elections", "Their mandate must stand until the mainland is recovered"],
+ ["Martial law", "End 20 years of martial law and return to constitutional rule", "The communist rebellion is not over, so keep martial law"],
+ ["Temporary Provisions", "Abolish the Temporary Provisions that removed presidential term limits", "In the anti-communist emergency the President needs strong powers"],
+ ["Forming new parties", "Guarantee the freedom to form new parties (lift the party ban)", "Block new parties to prevent disorder"],
+ ["The Lei Chen case", "Free Lei Chen of Free China and stop suppressing the press", "Punishing incitement to rebellion is justified"],
+ ["Newspaper licensing ban", "Lift limits on new newspapers and page counts", "Keep the limits to protect public order"],
+ ["Peng Ming-min’s manifesto", "Arguing that Taiwan’s people should decide their own future must not be a crime", "Agitation for “Taiwan independence” must be punished severely"],
+ ["Electing Taipei’s mayor", "Taipei, now a special municipality, should still elect its mayor", "The central government should appoint municipal mayors"],
+ ["China’s UN seat", "If the seat cannot be kept, even a “two Chinas” formula should be considered", "Not one step back from being the sole legitimate government"],
+ ["Preparing to retake the mainland", "Spend on building Taiwan rather than on a counter-attack", "Military spending comes first to recover the mainland"],
+ ["Conscription and service length", "Lighten the burden and shorten military service", "Keep current troop levels for the anti-communist posture"],
+ ["US troops and the defense treaty", "Do not rely only on the US; broaden independent diplomacy", "The Sino-American Mutual Defense Treaty is the core of security"],
+ ["Nine-year compulsory education", "With longer schooling the state must greatly raise teacher and classroom budgets", "Expand step by step as finances allow"],
+ ["Rice-for-fertilizer barter", "Abolish the barter system that cheats farmers", "Keep state procurement to secure food supplies"],
+ ["Kaohsiung Export Processing Zone", "Grow domestic small firms before favoring foreign capital", "Use export zones to attract foreign capital and speed industrialization"],
+ ["Tax structure", "Raise income and property taxes, cut taxes on ordinary consumption", "Rely on indirect taxes to fund growth"],
+ ["Labor unions", "Workers should freely form unions and bargain", "Ban strikes under martial law and let the party guide unions"],
+ ["Mandarin campaign and dialects", "Allow Taiwanese (Hokkien) in schools and broadcasting", "Reduce dialect use to spread Mandarin"],
+ ["Promoting native Taiwanese", "Greatly increase native Taiwanese in top government posts", "Keep choosing by ability and loyalty as now"],
+ ["Local elections and factions", "Strengthen fair-election monitoring instead of relying on local factions", "Work with local factions for stable local government"],
+ ["Family planning", "Childbearing is a family matter; minimal state role", "The state should actively promote family planning to slow population growth"],
+ ["Summary police punishment", "Abolish police summary penalties and let courts decide", "Police need these powers to keep order"]
+];

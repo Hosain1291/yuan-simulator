@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>立法院模擬器</title>
+<meta name="description" content="用自己的立場重新進行1969–2024年17次中華民國立法委員選舉：半圓席次、立法院長與總統選舉、選區地圖。">
+<link rel="alternate" hreflang="ko" href="./"><link rel="alternate" hreflang="en" href="en.html"><link rel="alternate" hreflang="zh-Hant" href="zh.html">
+<link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&family=Noto+Serif+TC:wght@600;800&family=Noto+Sans+TC:wght@400;500;700&family=Gowun+Batang:wght@400;700&family=DotGothic16&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head><body>
+<div class="wrap">
+  <div class="top">
+    <div class="brand">
+      <svg viewBox="0 0 30 24" aria-hidden="true"><path d="M3 22h24M6 22v-8M10 22v-8M14 22v-8M16 22v-8M20 22v-8M24 22v-8M4 14h22M7 14l8-5 8 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="15" cy="4.5" r="2.4" fill="currentColor"/></svg>
+      <div>立法院模擬器<small>立法院 · 1969 — 2024</small></div>
+    </div>
+    <div class="topr">
+      <nav class="lang" aria-label="語言"><a href="./" hreflang="ko" lang="ko">한국어</a><a href="en.html" hreflang="en" lang="en">English</a><a href="zh.html" hreflang="zh-Hant" lang="zh-Hant" aria-current="page">繁體中文</a></nav>
+      <div class="skin" id="skin" role="group" aria-label="佈景"><button type="button" data-skin="auto">自動</button><button type="button" data-skin="light"><i style="background:#ffffff"></i>白色</button><button type="button" data-skin="dark"><i style="background:#181b21"></i>深色</button><button type="button" data-skin="gold"><i style="background:linear-gradient(135deg,#f6d77a,#a87a00)"></i>金色</button><button type="button" data-skin="win9x"><i style="background:#008080;border-color:#c0c0c0"></i>Windows 9x</button><button type="button" data-skin="winxp"><i style="background:linear-gradient(180deg,#0997ff,#003dd7);border-color:#2f9e2f"></i>Windows XP</button><button type="button" data-skin="paper"><i style="background:#d9c49a"></i>復古紙張</button></div>
+      <button type="button" class="link" id="toHome" hidden>重新選擇選舉</button>
+    </div>
+  </div>
+  <main id="app"></main>
+  <p class="foot">題目與政黨立場是將各次選舉主要議題簡化而成，可能與實際黨意・表決不同。1969–1989年增補・增額選舉不計未改選的1948年委員，只計算改選席次，僑選名額依實際固定。無黨籍視為一個整體計算。選區地圖是讀取所提供選舉地圖（maps/original）的標籤辨識各選區後再刪除標籤，地圖上的分配為推估。</p>
+</div>
+<script src="data/elections.js"></script>
+<script src="data/districts.js"></script>
+<script src="data/presidents.js"></script>
+<script src="questions/1969.js"></script>
+<script src="questions/1972.js"></script>
+<script src="questions/1975.js"></script>
+<script src="questions/1980.js"></script>
+<script src="questions/1983.js"></script>
+<script src="questions/1986.js"></script>
+<script src="questions/1989.js"></script>
+<script src="questions/1992.js"></script>
+<script src="questions/1995.js"></script>
+<script src="questions/1998.js"></script>
+<script src="questions/2001.js"></script>
+<script src="questions/2004.js"></script>
+<script src="questions/2008.js"></script>
+<script src="questions/2012.js"></script>
+<script src="questions/2016.js"></script>
+<script src="questions/2020.js"></script>
+<script src="questions/2024.js"></script>
+<script src="i18n/zh.js"></script>
+<script src="i18n/zh-data.js"></script>
+<script src="questions/zh/1969.js"></script>
+<script src="questions/zh/1972.js"></script>
+<script src="questions/zh/1975.js"></script>
+<script src="questions/zh/1980.js"></script>
+<script src="questions/zh/1983.js"></script>
+<script src="questions/zh/1986.js"></script>
+<script src="questions/zh/1989.js"></script>
+<script src="questions/zh/1992.js"></script>
+<script src="questions/zh/1995.js"></script>
+<script src="questions/zh/1998.js"></script>
+<script src="questions/zh/2001.js"></script>
+<script src="questions/zh/2004.js"></script>
+<script src="questions/zh/2008.js"></script>
+<script src="questions/zh/2012.js"></script>
+<script src="questions/zh/2016.js"></script>
+<script src="questions/zh/2020.js"></script>
+<script src="questions/zh/2024.js"></script>
+<script src="i18n/apply.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/card.js"></script>
+<script src="js/app.js"></script>
+</body></html>
