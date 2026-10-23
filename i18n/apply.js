@@ -5,7 +5,8 @@
      people: { 한자 이름: 로마자 }      영어판의 대표·원장 후보 이름
      dn: { 선거구 키: 이름 }            영어판 선거구 이름 (zh는 키 자체가 한자 이름)
      E: { 연도: { ord, era, pres, prem, term, desc, spReal, P: { 키: 설명 } } }
-     Q: { 연도: [[제목, A안, B안]…] }   questions/en/YYYY.js·questions/zh/YYYY.js가 채움 */
+     Q: { 연도: [[제목, A안, B안]…] }   questions/en/YYYY.js·questions/zh/YYYY.js가 채움
+     pres: { 총통 선거 연도: 설명 } · mins: { 한국어 부처 이름: 번역 } · pd: { 정당 키: 기본 설명 } */
 (function () {
   const I = window.I18N, D = I && I.data;
   if (!D) return;
@@ -23,4 +24,6 @@
     const q = (D.Q || {})[a.y];
     (window.QSET[a.y] || []).forEach((row, i) => { const t = q && q[i]; if (t) { row[0] = t[0]; row[3] = t[1]; row[4] = t[2]; } });
   });
+  if (D.pres && window.PRES) Object.values(window.PRES).forEach(P => { if (D.pres[P.y]) P.note = D.pres[P.y]; });
+  if (D.mins) I.ui.mins = D.mins;
 })();
