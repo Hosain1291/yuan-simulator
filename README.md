@@ -13,11 +13,10 @@
 |---|---|
 | `maps/` | 라벨을 지우고 선거구마다 `data-k`(선거구 이름)를 붙인 지도 SVG. 원본은 `maps/original/` |
 | `questions/` | 선거별 질문(한국어) `YYYY.js`, 번역은 `questions/en/`·`questions/zh/` |
-| `data/` | 선거·정당 데이터(`elections.js`), 선거구 정수·지역 성향(`districts.js`, 자동 생성), 총통 선거(`presidents.js`) |
+| `data/` | 선거·정당 데이터(`elections.js`), 선거구 정수·지역 성향(`districts.js`), 총통 선거(`presidents.js`) |
 | `i18n/` | 화면 문구(`ko.js`·`en.js`·`zh.js`), 데이터 번역(`en-data.js`·`zh-data.js`), 번역 적용(`apply.js`) |
 | `js/` | 계산 엔진(`engine.js`), 화면(`app.js`), 결과 카드 이미지(`card.js`) |
 | `css/` | 스타일과 테마 |
-| `tools/` | 지도 정리·선거구 데이터·페이지 생성 스크립트(Python, Playwright, tesseract) |
 
 ## 질문 형식
 
@@ -25,17 +24,9 @@
 축은 `e`(경제) · `s`(정체성·질서) · `''`(스펙트럼 제외), 분야는 `pol` `cs` `def` `eco` `wel` `soc` `reg`입니다.
 질문을 고치면 같은 순서로 `questions/en/YYYY.js`·`questions/zh/YYYY.js`의 `[제목, A안, B안]`도 고쳐 주세요.
 
-## 지도 다시 만들기
+## GitHub Pages
 
-```
-python3 -m http.server 8765 &          # 저장소 루트에서
-python3 tools/map_old.py                # 1969–1998: 라벨 → 선거구 면 대응
-python3 tools/build_smd.py 2008 2012 2016 2020 2024   # 2008–2024: 숫자 라벨 OCR·확대 지도 짝짓기
-python3 tools/finish_smd.py 2008 2012 2016 2020 2024
-python3 tools/write_maps.py             # maps/YYYY.svg 쓰기
-python3 tools/old_membership.py
-python3 tools/build_districts.py        # data/districts.js
-python3 tools/build_pages.py            # index.html · en.html · zh.html
-```
+빌드 과정 없는 정적 사이트입니다. 저장소 Settings → Pages에서 `main` 브랜치의 `/ (root)`를 고르면
+`https://hosain1291.github.io/yuan-simulator/`에서 열립니다(지도는 `fetch`로 불러오므로 파일을 직접 여는 대신 웹 서버로 열어야 합니다).
 
 중대선거구 시기(1983·1986·1989–2004) 일부 선거구 정수는 인구 비례로 추정했고, 지도 위 의석 배치는 지역 성향에 따른 추정입니다.
